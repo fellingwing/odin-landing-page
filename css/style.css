@@ -1,0 +1,58 @@
+* {
+   margin: 0px;
+   padding: 0px; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*I should have just added these declarations to their selectors 
+individually. It is redundant to delineate colors since
+there is an image with the listed colors already,*/
+
+.hero, .footer {
+    background-color: #1F2937;
+}
+
+.call-to-action, button {
+    background-color: #3882F7;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.hero-text p, .header ul{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header img {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+button, .call-to-action {
+    background-color: #3882F6;
+}
+
+.information h3 {
+    font-size: 36px;
+    color: #1F2937
+}
+
+.quote {
+    background-color: E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937; 
+}
