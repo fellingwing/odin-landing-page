@@ -95,6 +95,14 @@ body {
     flex: 1;
 }
 
+.header img {
+    width: 15%;
+    height: 40px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    min-width: 144px;
+}
+
 .links {
     display: flex;
     list-style-type: none;
