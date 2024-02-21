@@ -1,17 +1,24 @@
 * {
    margin: 0px;
    padding: 0px; 
+   box-sizing: inherit;
+   /* border: red dotted 4px; */
+}
+
+html{
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+
 }
 
 /*I should have just added these declarations to their selectors 
 individually. It is redundant to delineate colors since
 there is an image with the listed colors already,*/
 
-.hero, .footer {
+.hero, .footer, .header-container {
     background-color: #1F2937;
 }
 
@@ -28,7 +35,7 @@ there is an image with the listed colors already,*/
     color: #F9FAF8;
 }
 
-.hero-text p, .header ul{
+.hero-text p, .header .links{
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -55,4 +62,68 @@ button, .call-to-action {
 .quote-text {
     font-size: 36px;
     color: #1F2937; 
+}
+
+/*Just choke up the declarations above as text and color styling.
+I'll do everything else below. I promise I won't do this awful 
+practice next time...*/
+
+/*SINGLE REPEATED USE CLASSES*/
+.max-width {
+    max-width: 1000px;
+}
+/*SINGLE REPEATED USE CLASSES*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    align-items: center;
+    flex: 1;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-content img {
+    width: 50%;
+    object-fit: cover;
+    object-position: 50% 10%;
 }
